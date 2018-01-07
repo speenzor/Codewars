@@ -15,7 +15,6 @@ def queue_time(customers, n):
         for i in range(1,n+1):
             #Create a dictionary key for each till
             queues['till'+str(i)]=0
-            #Possibly add a for loop here to add customers to queues
         for c in customers:
             min_key = min(queues, key=queues.get) #Find the till with the shortest line
             queues[min_key] += c #Next customer goes to the shortest line then updates the dictionary
