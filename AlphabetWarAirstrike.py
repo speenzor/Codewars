@@ -38,7 +38,3 @@ def alphabet_war(fight):
         print ("Left side wins!")
     else:
         print ("Let's fight again!")
-
-
-fight = '***m*wzbsd*dz*sd*'
-alphabet_war(fight)
