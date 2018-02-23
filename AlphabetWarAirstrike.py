@@ -19,22 +19,23 @@ def alphabet_war(fight):
     left_score = 0
     right_score = 0
     for i in range(len(fight_list)-1):
-        print(fight_list)
-        print(i)
         if fight_list[i] == '*':
             if fight_list[i-1] != '*' and i > 0:
                 fight_list[i-1] = 0
-            if fight_list[i+1] != '*' and i < (len(fight_list)):
+            if fight_list[i+1] != '*' and i < (len(fight_list)-1):
                 fight_list[i+1] = 0
             fight_list[i] = 0
+    if fight_list[-1] == '*':
+        fight_list[-2] = 0
+        fight_list[-1] = 0
     for i in fight_list:
         if i in right_side:
             right_score += right_side[i]
         if i in left_side:
             left_score += left_side[i]
     if right_score > left_score:
-        print ("Right side wins!")
+        return ("Right side wins!")
     elif left_score > right_score:
-        print ("Left side wins!")
+        return ("Left side wins!")
     else:
-        print ("Let's fight again!")
+        return ("Let's fight again!")
