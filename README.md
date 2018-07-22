@@ -1,2 +1,2 @@
-# Codewars
+# Python Codewars
 These files are simply my solutions to challenges completed from Codewars.com, a site that produce coding katas for code ninjas like myself to sharpen our coding skills. These challenges have helped to ingrain proglem solving skills in me. I try to be clear and consistent in how I label variables and how I space things. I've also tried to improve my commenting to be clearer to a reader of my code, and I've tried to think about performance of the program as I get better.
